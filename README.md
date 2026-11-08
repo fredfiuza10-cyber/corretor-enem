@@ -1,75 +1,70 @@
-# Barddok Corretor ENEM — Feedback Pedagógico
+# Barddok — Análise e Avaliação de Redações do ENEM
 
-**Status:** Em desenvolvimento experimental 
+**Status: Em desenvolvimento**
 
 ## Sobre o projeto
 
-O Corretor ENEM é um projeto pessoal desenvolvido em Python com o objetivo de criar uma ferramenta de apoio pedagógico para a análise de redações do Exame Nacional do Ensino Médio (ENEM).
+O **Barddok** é um projeto autoral desenvolvido em Python que busca explorar o uso da programação e da inteligência artificial na análise pedagógica de redações do Exame Nacional do Ensino Médio (ENEM).
 
-A proposta é identificar aspectos do texto que merecem atenção e gerar feedbacks personalizados, fundamentados em evidências da própria redação do estudante e orientados pelas cinco competências avaliadas no exame.
+A proposta é desenvolver uma ferramenta capaz de identificar aspectos que podem ser aprimorados em uma redação e produzir feedbacks contextualizados, fundamentados em elementos presentes no próprio texto do estudante.
 
-Mais do que apontar possíveis problemas, o objetivo é ajudar o estudante a compreender o que pode ser aprimorado, por que determinado aspecto merece atenção e como desenvolver sua escrita de maneira mais consciente.
+O projeto utiliza como referência as cinco competências avaliadas na redação do ENEM, buscando ir além da identificação isolada de palavras e expressões, considerando também o contexto e a organização das ideias.
 
 ## Objetivos
 
-- Desenvolver uma ferramenta de apoio ao ensino e à aprendizagem da redação.
-- Explorar a análise textual automatizada com Python.
-- Investigar formas de transformar critérios de correção em regras e verificações programáticas.
-- Produzir feedbacks específicos, contextualizados e pedagogicamente úteis.
-- Estudar a integração entre análise linguística, processamento de texto e inteligência artificial.
+- Explorar a aplicação de Python na análise automatizada de textos.
+- Desenvolver verificações programáticas fundamentadas nos critérios de avaliação do ENEM.
+- Estruturar critérios de análise e feedbacks utilizando arquivos JSON.
+- Investigar a utilização de modelos de linguagem para análises contextuais.
+- Desenvolver uma ferramenta de apoio à aprendizagem e ao aprimoramento da escrita.
 
-## As cinco competências do ENEM
+## Desenvolvimento atual
 
-O projeto está sendo estruturado para investigar aspectos relacionados a:
+O desenvolvimento está concentrado na construção e no aprimoramento das regras de análise textual, especialmente na interpretação dos critérios relacionados às competências do ENEM.
 
-- **Competência 1:** domínio da modalidade escrita formal da língua portuguesa.
-- **Competência 2:** compreensão do tema, atendimento ao tipo textual dissertativo-argumentativo e uso de repertório sociocultural.
-- **Competência 3:** seleção, organização e desenvolvimento de argumentos.
-- **Competência 4:** mecanismos linguísticos de coesão e articulação textual.
-- **Competência 5:** elaboração de proposta de intervenção que respeite os direitos humanos.
+Entre as atividades realizadas estão:
 
-A análise busca considerar o contexto em que cada elemento aparece, evitando reduzir a avaliação a uma simples contagem de palavras ou à identificação isolada de expressões.
+- Estruturação de critérios de avaliação em arquivos JSON.
+- Implementação de verificações textuais utilizando Python.
+- Desenvolvimento de regras relacionadas à análise argumentativa da Competência 3.
+- Criação de testes automatizados para verificar o comportamento das regras implementadas.
+- Investigação de possibilidades de integração com modelos de linguagem locais.
+
+O projeto está sendo desenvolvido de maneira incremental, com revisões dos critérios, identificação de limitações e testes para aprimorar a consistência das análises.
 
 ## Tecnologias e ferramentas
 
-- **Python:** desenvolvimento da lógica de análise textual.
-- **JSON:** organização de regras, critérios e estruturas de feedback.
-- **LanguageTool:** apoio experimental à identificação de possíveis problemas linguísticos.
-- **Ollama e modelos locais de linguagem:** investigação experimental de possibilidades de análise contextual e geração de feedbacks.
+- **Python:** desenvolvimento da lógica de análise e processamento textual.
+- **JSON:** organização dos critérios, regras e estruturas de análise.
+- **Pytest:** testes automatizados.
+- **Ollama:** experimentação com modelos locais de linguagem.
+- **LanguageTool:** ferramenta de apoio à identificação de possíveis problemas linguísticos.
 
-As ferramentas estão em diferentes estágios de experimentação. A integração e a validação dos componentes fazem parte do processo de desenvolvimento.
+As tecnologias estão em diferentes estágios de utilização e experimentação. Nem todas fazem parte de uma integração consolidada.
 
-## Estágio atual
+## Próximas etapas
 
-O projeto está em fase de construção, testes e aprimoramento.
-
-As atividades incluem o desenvolvimento de verificações textuais, a organização de critérios pedagógicos, a investigação de abordagens de análise contextual e a avaliação da qualidade dos feedbacks produzidos.
-
-A prioridade é construir uma ferramenta que apresente observações úteis e fundamentadas no texto do estudante, evitando comentários genéricos ou conclusões sem evidências suficientes.
-
-## Próximos passos
-
-- Aprimorar as verificações relacionadas às cinco competências.
-- Estruturar e validar os feedbacks pedagógicos.
-- Testar o comportamento do programa com redações de diferentes níveis de desenvolvimento.
-- Melhorar a integração entre os componentes de análise.
-- Organizar testes e documentação técnica.
-- Investigar uma interface acessível pela web.
+- Aprimorar as regras de análise das cinco competências.
+- Ampliar os testes com redações reais e diferentes níveis de desenvolvimento.
+- Avaliar a qualidade e a fundamentação dos feedbacks gerados.
+- Aprimorar a integração entre as regras programáticas e os modelos de linguagem.
+- Desenvolver uma interface para interação com os usuários.
+- Investigar a disponibilização da ferramenta em uma plataforma web.
 
 ## Limitações
 
-Este projeto é experimental e não substitui a avaliação de um professor ou corretor qualificado.
+O Barddok é um projeto experimental em desenvolvimento. Suas análises não substituem a avaliação de um professor ou corretor qualificado e não representam notas oficiais do ENEM.
 
-A ferramenta não tem como objetivo atribuir uma nota oficial do ENEM. Seus resultados devem ser interpretados como observações pedagógicas sujeitas a limitações e validação.
-
-A precisão e a abrangência das análises ainda estão em desenvolvimento.
+A precisão, a abrangência e a qualidade dos feedbacks ainda estão sujeitas a testes, validações e aprimoramentos.
 
 ## Motivação
 
-Este projeto representa uma oportunidade de aprofundar meus estudos em programação, aplicar conhecimentos de Python a um problema real e explorar o uso responsável da tecnologia na educação.
+O Barddok surgiu do interesse em unir tecnologia, programação e educação por meio de um problema concreto.
 
-O desenvolvimento envolve experimentação, identificação de falhas, revisão de critérios e aprimoramento progressivo da solução.
+Além de seu propósito educacional, o projeto representa uma oportunidade de aplicar conhecimentos de Ciência da Computação, aprofundar estudos em Python e explorar possibilidades de utilização responsável da inteligência artificial.
+
+Seu desenvolvimento ocorre de maneira progressiva, acompanhando a evolução dos conhecimentos técnicos e a validação das soluções implementadas.
 
 ---
 
-**Projeto pessoal em desenvolvimento.** O código e a documentação serão atualizados conforme a evolução dos testes e da implementação.
+*Projeto autoral em desenvolvimento. A documentação e a implementação serão atualizadas conforme a evolução do projeto.*
